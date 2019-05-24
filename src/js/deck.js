@@ -76,7 +76,10 @@ class Deck {
       this.cards[i] = this.cards[j];
       this.cards[j] = swap;
     }
+  }
   
-
+  giveCard() {
+    let firstCard = this.cards[0];
+    firstCard.mount();
   }
 }

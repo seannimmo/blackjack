@@ -11,11 +11,11 @@ class Card {
   mount() {
     const hand = document.querySelector("#player-hand > .cards");
     hand.appendChild(this.render());
-
   }
+  
 
   render () {
-    this.element = createElement('div');
+    this.element = document.createElement('div');
     this.element.className = `card face-${rank}-of-${suit}`;
     console.log(this.element.className);
     return this.element; 
